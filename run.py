@@ -19,7 +19,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 cwd = os.getcwd()
 
 opts = webdriver.ChromeOptions()
-opts.headless = False
+opts.headless = True
 opts.add_argument('log-level=3') 
 dc = DesiredCapabilities.CHROME
 dc['loggingPrefs'] = {'driver': 'OFF', 'server': 'OFF', 'browser': 'OFF'}
