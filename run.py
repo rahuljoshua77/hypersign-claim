@@ -75,6 +75,10 @@ def login_email():
         wait(browser,5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#accept"))).click()
     except:
         pass
+    try: 
+        wait(browser,5).until(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(),'understand')]"))).click()
+    except:
+        pass
     sleep(10)
     try:
         element = wait(browser,15).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="password"]/div[1]/div/div[1]/input')))
